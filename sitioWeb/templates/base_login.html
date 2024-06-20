@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{% static 'imagenes/favicon.ico' %}">
-    <link rel="stylesheet" href="{% static 'css/loader.css' %}">
     <title>{% block titulo %}{% endblock titulo %}</title>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
@@ -109,17 +108,12 @@ body {
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
-    <div class="loader-container">
-        <div class="loader"></div>
-    </div>
-
+   
     <div class="wrapper">
         {% block login %}
             
         {% endblock login %}
     </div>
 
-    <script src="{% static 'js/loader.js' %}"></script>
 </body>
 </html>
